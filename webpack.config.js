@@ -12,11 +12,11 @@ module.exports = {
         name: 'ExtensionLib',
         type: 'window',
       },
-      
+
     },
   },
   output: {
-    filename: ({contentHashType, chunk}) => {
+    filename: ({ contentHashType, chunk }) => {
       return `static/js/${contentHashType === 'javascript' && chunk.name === 'main' ? '[name].js' : '[name].[contenthash:8].js'}`
     },
     chunkFilename: 'static/js/[name].[contenthash:8].js',
@@ -29,11 +29,11 @@ module.exports = {
     host: '127.0.0.1',
     port: 9999,
     static: 'static',
-    header: {'Access-Control-Allow-Origin':'*'},
+    headers: { 'Access-Control-Allow-Origin': '*' },
   },
   plugins: baseConfig.plugins.concat([
     new webpack.DefinePlugin({
-        'DEPLOY_ENV': '"dev"',
+      'DEPLOY_ENV': '"dev"',
     })
   ])
 }
