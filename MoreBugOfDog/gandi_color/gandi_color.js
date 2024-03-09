@@ -1,4 +1,4 @@
-
+// 未完成 正在开发
 const gandi_color_picture = "";
 
 const gandi_color_icon = "";
