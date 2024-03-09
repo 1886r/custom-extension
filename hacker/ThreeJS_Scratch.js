@@ -1,3 +1,4 @@
+//v1.0.0
 import * as THREE from 'https://cdn.bootcdn.net/ajax/libs/three.js/0.156.1/three.module.js';
 
 console.log(THREE);
