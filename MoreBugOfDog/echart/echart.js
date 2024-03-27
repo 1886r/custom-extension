@@ -1,6 +1,10 @@
 // 遵循源仓库的开源协议
 // 引入 echarts 库，感谢这个库的开发团队
 // 感谢jsdelivr提供的cdn加速服务
+/**
+ * @version Build.1.alpha.1 
+ */
+
 import * as art from "https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js";
 // import Cast from '../utils/cast.js'
 import cover from './assets/cover.svg'
